@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
       navLinks.classList.toggle("active");
       hamburger.classList.toggle("active");
   
-      // Animate the links
       links.forEach((link, index) => {
         if (link.style.animation) {
           link.style.animation = "";
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   
-    // Close menu when clicking outside
     document.addEventListener("click", (e) => {
       if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
         navLinks.classList.remove("active");
